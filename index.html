@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p>My balance</p>
+          <h1>$921.48</h1>
+        </div>
+        <div>
+          <img src="./images/logo.svg" alt="" />
+        </div>
+      </header>
+
+      <section class="card">
+        <div>
+          <h2>Spending - Last 7 days</h2>
+        </div>
+        <ul class="chart">
+          <li>
+            <span style="height: 22%" title="mon" data-info="$17.45"></span>
+          </li>
+          <li>
+            <span style="height: 24%" title="tue" data-info="$34.91"></span>
+          </li>
+          <li>
+            <span
+              style="height: 60%"
+              title="wed"
+              class="wed"
+              data-info="$52.36"
+            ></span>
+          </li>
+          <li>
+            <span style="height: 20%" title="thur" data-info="$31.07"></span>
+          </li>
+          <li>
+            <span style="height: 28%" title="fri" data-info="$23.39"></span>
+          </li>
+          <li>
+            <span style="height: 48%" title="sat" data-info="$43.28"></span>
+          </li>
+          <li>
+            <span style="height: 30%" title="sun" data-info="$25.48"></span>
+          </li>
+        </ul>
+
+        <div class="line"></div>
+        <div class="last">
+          <div class="first">
+            <p>Total this month</p>
+            <h1>$478.33</h1>
+          </div>
+          <div class="second">
+            <p class="one">+2.4%</p>
+            <p class="two">from last month</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/ijklmopffs">Nuel Elekwachi</a>.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(27, 66%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+}
+header {
+  background-color: hsl(10, 79%, 65%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+header h1 {
+  margin-top: 0;
+}
+header p {
+  font-weight: 200;
+}
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.card h2 {
+  font-size: 25px;
+  color: hsl(25, 47%, 15%);
+}
+.chart {
+  display: table;
+  width: 100%;
+  padding: 0;
+}
+.chart li {
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  height: 200px;
+}
+.chart span {
+  margin: 0 1em;
+  display: block;
+  background: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  width: 65%;
+  cursor: pointer;
+}
+.chart span:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  padding: 5px 1em 0;
+  display: block;
+  text-align: center;
+  content: attr(title);
+  word-wrap: break-word;
+  color: hsl(28, 10%, 53%);
+}
+.chart span:hover::after {
+  content: attr(data-info);
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(25, 47%, 15%);
+  color: white;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.chart span:hover {
+  opacity: 0.5;
+}
+.chart span.wed {
+  background: hsl(186, 34%, 60%);
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin-top: 40px;
+}
+.last {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.first p {
+  color: hsl(28, 10%, 53%);
+  margin-bottom: 0;
+}
+.first h1 {
+  color: hsl(25, 47%, 15%);
+  font-size: 32px;
+  margin-top: 0;
+}
+.second {
+  text-align: end;
+}
+.one {
+  color: hsl(25, 47%, 15%);
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.two {
+  margin-top: 0;
+  color: hsl(28, 10%, 53%);
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+  header {
+    width: 95%;
+  }
+}
